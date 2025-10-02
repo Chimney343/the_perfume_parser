@@ -1,0 +1,794 @@
+[
+  {
+    "name": "Wajood Lattafa Perfumes",
+    "brand": "Lattafa Perfumes",
+    "launch_year": null,
+    "perfumer": null,
+    "gender": "unisex",
+    "fragrance_family": null,
+    "url": "https://www.fragrantica.com/perfume/Lattafa-Perfumes/Wajood-80467.html",
+    "fragrance_id": 80467,
+    "description": "Wajood",
+    "notes_pyramid": {
+      "top": [
+        "Sea Water",
+        "Pink Pepper"
+      ],
+      "middle": [
+        "Vetiver",
+        "Patchouli"
+      ],
+      "base": [
+        "Sandalwood",
+        "Amber"
+      ]
+    },
+    "main_accords": [
+      {
+        "name": "woody",
+        "intensity": 100.0
+      },
+      {
+        "name": "aromatic",
+        "intensity": 83.2168
+      },
+      {
+        "name": "marine",
+        "intensity": 74.9798
+      },
+      {
+        "name": "earthy",
+        "intensity": 61.0362
+      },
+      {
+        "name": "patchouli",
+        "intensity": 57.8314
+      },
+      {
+        "name": "warm spicy",
+        "intensity": 55.9477
+      },
+      {
+        "name": "soft spicy",
+        "intensity": 50.9438
+      },
+      {
+        "name": "amber",
+        "intensity": 50.522
+      },
+      {
+        "name": "powdery",
+        "intensity": 48.1186
+      },
+      {
+        "name": "salty",
+        "intensity": 47.9921
+      }
+    ],
+    "ratings": {
+      "overall_rating": 3.95,
+      "best_rating": 5.0,
+      "rating_count": 450,
+      "review_count": 73,
+      "longevity": {
+        "very weak": 5,
+        "weak": 4,
+        "moderate": 60,
+        "long lasting": 221,
+        "eternal": 87
+      }
+    },
+    "seasonal_performance": {
+      "spring": null,
+      "summer": null,
+      "autumn": null,
+      "winter": null,
+      "day": null,
+      "night": null
+    },
+    "images": {
+      "main_image": "https://fimgs.net/mdimg/perfume-thumbs/375x500.80467.jpg",
+      "bottle_images": [
+        "https://fimgs.net/mdimg/perfume-thumbs/375x500.80467.jpg",
+        "https://fimgs.net/mdimg/perfume-thumbs/s.75805.jpg",
+        "https://fimgs.net/mdimg/perfume-thumbs/s.88175.jpg",
+        "https://fimgs.net/mdimg/perfume-thumbs/s.93628.jpg",
+        "https://fimgs.net/mdimg/perfume-thumbs/s.72821.jpg",
+        "https://fimgs.net/mdimg/perfume-thumbs/s.76880.jpg",
+        "https://fimgs.net/mdimg/perfume-thumbs/s.84302.jpg",
+        "https://fimgs.net/mdimg/perfume-thumbs/s.96768.jpg",
+        "https://fimgs.net/mdimg/perfume-thumbs/s.70465.jpg",
+        "https://fimgs.net/mdimg/perfume-thumbs/s.67996.jpg",
+        "https://fimgs.net/mdimg/perfume-thumbs/s.85097.jpg",
+        "https://fimgs.net/mdimg/perfume-thumbs/s.64948.jpg",
+        "https://fimgs.net/mdimg/perfume-thumbs/s.96864.jpg",
+        "https://fimgs.net/mdimg/perfume-thumbs/s.99586.jpg",
+        "https://fimgs.net/mdimg/perfume-thumbs/s.64947.jpg",
+        "https://fimgs.net/mdimg/perfume-thumbs/s.82727.jpg",
+        "https://fimgs.net/mdimg/perfume-thumbs/s.101124.jpg",
+        "https://fimgs.net/mdimg/perfume-thumbs/s.95752.jpg",
+        "https://fimgs.net/mdimg/perfume-thumbs/s.83320.jpg",
+        "https://fimgs.net/mdimg/perfume-thumbs/s.89850.jpg",
+        "https://fimgs.net/mdimg/perfume-thumbs/s.98937.jpg",
+        "https://fimgs.net/mdimg/perfume-thumbs/s.78560.jpg",
+        "https://fimgs.net/mdimg/perfume-thumbs/s.89454.jpg",
+        "https://fimgs.net/mdimg/perfume-thumbs/s.78155.jpg",
+        "https://fimgs.net/mdimg/perfume-thumbs/s.101314.jpg",
+        "https://fimgs.net/mdimg/perfume-thumbs/s.92423.jpg",
+        "https://fimgs.net/mdimg/perfume-thumbs/s.82731.jpg",
+        "https://fimgs.net/mdimg/perfume-thumbs/s.92183.jpg",
+        "https://fimgs.net/mdimg/perfume-thumbs/s.96867.jpg",
+        "https://fimgs.net/mdimg/perfume-thumbs/s.81121.jpg",
+        "https://fimgs.net/mdimg/perfume-thumbs/s.100386.jpg",
+        "https://fimgs.net/mdimg/perfume-thumbs/s.98242.jpg",
+        "https://fimgs.net/mdimg/perfume-thumbs/s.81099.jpg",
+        "https://fimgs.net/mdimg/perfume-thumbs/s.82788.jpg",
+        "https://fimgs.net/mdimg/perfume-thumbs/s.82004.jpg",
+        "https://fimgs.net/mdimg/perfume-thumbs/s.92037.jpg",
+        "https://fimgs.net/mdimg/perfume-thumbs/s.92425.jpg",
+        "https://fimgs.net/mdimg/perfume-thumbs/s.88636.jpg",
+        "https://fimgs.net/mdimg/perfume-thumbs/s.98238.jpg",
+        "https://fimgs.net/mdimg/perfume-thumbs/s.99140.jpg",
+        "https://fimgs.net/mdimg/perfume-thumbs/s.81763.jpg",
+        "https://fimgs.net/mdimg/perfume-thumbs/s.82814.jpg",
+        "https://fimgs.net/mdimg/perfume-thumbs/s.99142.jpg",
+        "https://fimgs.net/mdimg/perfume-thumbs/s.92182.jpg",
+        "https://fimgs.net/mdimg/perfume-thumbs/s.113906.jpg",
+        "https://fimgs.net/mdimg/perfume-thumbs/s.98241.jpg",
+        "https://fimgs.net/mdimg/perfume-thumbs/s.82816.jpg",
+        "https://fimgs.net/mdimg/perfume-thumbs/s.85368.jpg",
+        "https://fimgs.net/mdimg/perfume-thumbs/s.98240.jpg",
+        "https://fimgs.net/mdimg/perfume-thumbs/s.92028.jpg",
+        "https://fimgs.net/mdimg/perfume-thumbs/s.98244.jpg",
+        "https://fimgs.net/mdimg/perfume-thumbs/s.82815.jpg",
+        "https://fimgs.net/mdimg/perfume-thumbs/s.92036.jpg",
+        "https://fimgs.net/mdimg/perfume-thumbs/s.82005.jpg",
+        "https://fimgs.net/mdimg/perfume-thumbs/s.82798.jpg",
+        "https://fimgs.net/mdimg/perfume-thumbs/s.84307.jpg",
+        "https://fimgs.net/mdimg/perfume-thumbs/s.82810.jpg",
+        "https://fimgs.net/mdimg/perfume-thumbs/s.82379.jpg",
+        "https://fimgs.net/mdimg/perfume-thumbs/s.99141.jpg",
+        "https://fimgs.net/mdimg/perfume-thumbs/s.82813.jpg",
+        "https://fimgs.net/mdimg/perfume-thumbs/s.82808.jpg",
+        "https://fimgs.net/mdimg/perfume-thumbs/s.82811.jpg",
+        "https://fimgs.net/mdimg/perfume-thumbs/s.82622.jpg",
+        "https://fimgs.net/mdimg/perfume-thumbs/s.98243.jpg",
+        "https://fimgs.net/mdimg/perfume-thumbs/s.82809.jpg",
+        "https://fimgs.net/mdimg/perfume-thumbs/s.82693.jpg",
+        "https://fimgs.net/mdimg/perfume-thumbs/s.92424.jpg",
+        "https://fimgs.net/mdimg/perfume-thumbs/s.82799.jpg",
+        "https://fimgs.net/mdimg/perfume-thumbs/s.82471.jpg",
+        "https://fimgs.net/mdimg/perfume-thumbs/s.82812.jpg",
+        "https://fimgs.net/mdimg/perfume-thumbs/s.108458.jpg",
+        "https://fimgs.net/mdimg/perfume-thumbs/s.82621.jpg",
+        "https://fimgs.net/mdimg/perfume-thumbs/s.113192.jpg",
+        "https://fimgs.net/mdimg/perfume-thumbs/s.75805.jpg",
+        "https://fimgs.net/mdimg/perfume-thumbs/s.72821.jpg",
+        "https://fimgs.net/mdimg/perfume-thumbs/s.34696.jpg",
+        "https://fimgs.net/mdimg/perfume-thumbs/s.64948.jpg",
+        "https://fimgs.net/mdimg/perfume-thumbs/s.70839.jpg",
+        "https://fimgs.net/mdimg/perfume-thumbs/s.40031.jpg",
+        "https://fimgs.net/mdimg/perfume-thumbs/s.1834.jpg",
+        "https://fimgs.net/mdimg/perfume-thumbs/s.13016.jpg",
+        "https://fimgs.net/mdimg/perfume-thumbs/s.228.jpg",
+        "https://fimgs.net/mdimg/perfume-thumbs/s.21369.jpg",
+        "https://fimgs.net/mdimg/perfume-thumbs/s.64947.jpg",
+        "https://fimgs.net/mdimg/perfume-thumbs/s.32356.jpg",
+        "https://fimgs.net/mdimg/perfume-thumbs/s.17666.jpg",
+        "https://fimgs.net/mdimg/perfume-thumbs/s.2318.jpg",
+        "https://fimgs.net/mdimg/perfume-thumbs/s.17.jpg",
+        "https://fimgs.net/mdimg/perfume-thumbs/s.53578.jpg",
+        "https://fimgs.net/mdimg/perfume-thumbs/s.89765.jpg",
+        "https://fimgs.net/mdimg/perfume-thumbs/s.65414.jpg",
+        "https://fimgs.net/mdimg/perfume-thumbs/s.67996.jpg",
+        "https://fimgs.net/mdimg/perfume-thumbs/s.68271.jpg"
+      ],
+      "social_card": "https://fimgs.net/mdimg/perfume-social-cards/en-social-80467.jpeg"
+    },
+    "reviews": {
+      "total_reviews": 0,
+      "recent_reviews": []
+    },
+    "recommendations": {
+      "similar_fragrances": [],
+      "designer_fragrances": [
+        {
+          "name": "Khamrah Lattafa Perfumes",
+          "url": "/perfume/Lattafa-Perfumes/Khamrah-75805.html",
+          "image": "https://fimgs.net/mdimg/perfume-thumbs/s.75805.jpg"
+        },
+        {
+          "name": "Khamrah Qahwa Lattafa Perfumes",
+          "url": "/perfume/Lattafa-Perfumes/Khamrah-Qahwa-88175.html",
+          "image": "https://fimgs.net/mdimg/perfume-thumbs/s.88175.jpg"
+        },
+        {
+          "name": "Eclaire Lattafa Perfumes",
+          "url": "/perfume/Lattafa-Perfumes/Eclaire-93628.html",
+          "image": "https://fimgs.net/mdimg/perfume-thumbs/s.93628.jpg"
+        },
+        {
+          "name": "Asad Lattafa Perfumes",
+          "url": "/perfume/Lattafa-Perfumes/Asad-72821.html",
+          "image": "https://fimgs.net/mdimg/perfume-thumbs/s.72821.jpg"
+        },
+        {
+          "name": "Yara Lattafa Perfumes",
+          "url": "/perfume/Lattafa-Perfumes/Yara-76880.html",
+          "image": "https://fimgs.net/mdimg/perfume-thumbs/s.76880.jpg"
+        },
+        {
+          "name": "Bade'e Al Oud Honor & Glory Lattafa Perfumes",
+          "url": "/perfume/Lattafa-Perfumes/Bade-e-Al-Oud-Honor-Glory-84302.html",
+          "image": "https://fimgs.net/mdimg/perfume-thumbs/s.84302.jpg"
+        },
+        {
+          "name": "Angham Lattafa Perfumes",
+          "url": "/perfume/Lattafa-Perfumes/Angham-96768.html",
+          "image": "https://fimgs.net/mdimg/perfume-thumbs/s.96768.jpg"
+        },
+        {
+          "name": "Fakhar Black Lattafa Perfumes",
+          "url": "/perfume/Lattafa-Perfumes/Fakhar-Black-70465.html",
+          "image": "https://fimgs.net/mdimg/perfume-thumbs/s.70465.jpg"
+        },
+        {
+          "name": "Qaed Al Fursan Lattafa Perfumes",
+          "url": "/perfume/Lattafa-Perfumes/Qaed-Al-Fursan-67996.html",
+          "image": "https://fimgs.net/mdimg/perfume-thumbs/s.67996.jpg"
+        },
+        {
+          "name": "Liam Lattafa Perfumes",
+          "url": "/perfume/Lattafa-Perfumes/Liam-85097.html",
+          "image": "https://fimgs.net/mdimg/perfume-thumbs/s.85097.jpg"
+        },
+        {
+          "name": "Bade'e Al Oud Oud for Glory Lattafa Perfumes",
+          "url": "/perfume/Lattafa-Perfumes/Bade-e-Al-Oud-Oud-for-Glory-64948.html",
+          "image": "https://fimgs.net/mdimg/perfume-thumbs/s.64948.jpg"
+        },
+        {
+          "name": "Her Confession Lattafa Perfumes",
+          "url": "/perfume/Lattafa-Perfumes/Her-Confession-96864.html",
+          "image": "https://fimgs.net/mdimg/perfume-thumbs/s.96864.jpg"
+        },
+        {
+          "name": "Teriaq Intense Lattafa Perfumes",
+          "url": "/perfume/Lattafa-Perfumes/Teriaq-Intense-99586.html",
+          "image": "https://fimgs.net/mdimg/perfume-thumbs/s.99586.jpg"
+        },
+        {
+          "name": "Ameer Al Oudh Intense Oud Lattafa Perfumes",
+          "url": "/perfume/Lattafa-Perfumes/Ameer-Al-Oudh-Intense-Oud-64947.html",
+          "image": "https://fimgs.net/mdimg/perfume-thumbs/s.64947.jpg"
+        },
+        {
+          "name": "Maahir Legacy Lattafa Perfumes",
+          "url": "/perfume/Lattafa-Perfumes/Maahir-Legacy-82727.html",
+          "image": "https://fimgs.net/mdimg/perfume-thumbs/s.82727.jpg"
+        },
+        {
+          "name": "Asad Bourbon Lattafa Perfumes",
+          "url": "/perfume/Lattafa-Perfumes/Asad-Bourbon-101124.html",
+          "image": "https://fimgs.net/mdimg/perfume-thumbs/s.101124.jpg"
+        },
+        {
+          "name": "Yara Candy Lattafa Perfumes",
+          "url": "/perfume/Lattafa-Perfumes/Yara-Candy-95752.html",
+          "image": "https://fimgs.net/mdimg/perfume-thumbs/s.95752.jpg"
+        },
+        {
+          "name": "Yara Tous Lattafa Perfumes",
+          "url": "/perfume/Lattafa-Perfumes/Yara-Tous-83320.html",
+          "image": "https://fimgs.net/mdimg/perfume-thumbs/s.83320.jpg"
+        },
+        {
+          "name": "Teriaq Lattafa Perfumes",
+          "url": "/perfume/Lattafa-Perfumes/Teriaq-89850.html",
+          "image": "https://fimgs.net/mdimg/perfume-thumbs/s.89850.jpg"
+        },
+        {
+          "name": "Noble Blush Lattafa Perfumes",
+          "url": "/perfume/Lattafa-Perfumes/Noble-Blush-98937.html",
+          "image": "https://fimgs.net/mdimg/perfume-thumbs/s.98937.jpg"
+        },
+        {
+          "name": "Nebras Lattafa Perfumes",
+          "url": "/perfume/Lattafa-Perfumes/Nebras-78560.html",
+          "image": "https://fimgs.net/mdimg/perfume-thumbs/s.78560.jpg"
+        },
+        {
+          "name": "Vintage Radio Lattafa Perfumes",
+          "url": "/perfume/Lattafa-Perfumes/Vintage-Radio-89454.html",
+          "image": "https://fimgs.net/mdimg/perfume-thumbs/s.89454.jpg"
+        },
+        {
+          "name": "Eternal Oud Lattafa Perfumes",
+          "url": "/perfume/Lattafa-Perfumes/Eternal-Oud-78155.html",
+          "image": "https://fimgs.net/mdimg/perfume-thumbs/s.78155.jpg"
+        },
+        {
+          "name": "Art Of Universe Lattafa Perfumes",
+          "url": "/perfume/Lattafa-Perfumes/Art-Of-Universe-101314.html",
+          "image": "https://fimgs.net/mdimg/perfume-thumbs/s.101314.jpg"
+        },
+        {
+          "name": "Art of Arabia I Lattafa Perfumes",
+          "url": "/perfume/Lattafa-Perfumes/Art-of-Arabia-I-92423.html",
+          "image": "https://fimgs.net/mdimg/perfume-thumbs/s.92423.jpg"
+        },
+        {
+          "name": "Ansaam Gold Lattafa Perfumes",
+          "url": "/perfume/Lattafa-Perfumes/Ansaam-Gold-82731.html",
+          "image": "https://fimgs.net/mdimg/perfume-thumbs/s.82731.jpg"
+        },
+        {
+          "name": "Affection Lattafa Perfumes",
+          "url": "/perfume/Lattafa-Perfumes/Affection-92183.html",
+          "image": "https://fimgs.net/mdimg/perfume-thumbs/s.92183.jpg"
+        },
+        {
+          "name": "Artisan Ethnique Lattafa Perfumes",
+          "url": "/perfume/Lattafa-Perfumes/Artisan-Ethnique-96867.html",
+          "image": "https://fimgs.net/mdimg/perfume-thumbs/s.96867.jpg"
+        },
+        {
+          "name": "Ishq Al Shuyukh Gold Lattafa Perfumes",
+          "url": "/perfume/Lattafa-Perfumes/Ishq-Al-Shuyukh-Gold-81121.html",
+          "image": "https://fimgs.net/mdimg/perfume-thumbs/s.81121.jpg"
+        },
+        {
+          "name": "Peace & Love Lattafa Perfumes",
+          "url": "/perfume/Lattafa-Perfumes/Peace-Love-100386.html",
+          "image": "https://fimgs.net/mdimg/perfume-thumbs/s.100386.jpg"
+        },
+        {
+          "name": "Art Of Nature II Lattafa Perfumes",
+          "url": "/perfume/Lattafa-Perfumes/Art-Of-Nature-II-98242.html",
+          "image": "https://fimgs.net/mdimg/perfume-thumbs/s.98242.jpg"
+        },
+        {
+          "name": "Ishq Al Shuyukh Silver Lattafa Perfumes",
+          "url": "/perfume/Lattafa-Perfumes/Ishq-Al-Shuyukh-Silver-81099.html",
+          "image": "https://fimgs.net/mdimg/perfume-thumbs/s.81099.jpg"
+        },
+        {
+          "name": "Ansaam Silver Lattafa Perfumes",
+          "url": "/perfume/Lattafa-Perfumes/Ansaam-Silver-82788.html",
+          "image": "https://fimgs.net/mdimg/perfume-thumbs/s.82788.jpg"
+        },
+        {
+          "name": "Tharwah Gold Lattafa Perfumes",
+          "url": "/perfume/Lattafa-Perfumes/Tharwah-Gold-82004.html",
+          "image": "https://fimgs.net/mdimg/perfume-thumbs/s.82004.jpg"
+        },
+        {
+          "name": "La Collection d'antiquités 1505 Lattafa Perfumes",
+          "url": "/perfume/Lattafa-Perfumes/La-Collection-d-antiquites-1505-92037.html",
+          "image": "https://fimgs.net/mdimg/perfume-thumbs/s.92037.jpg"
+        },
+        {
+          "name": "Art of Arabia III Lattafa Perfumes",
+          "url": "/perfume/Lattafa-Perfumes/Art-of-Arabia-III-92425.html",
+          "image": "https://fimgs.net/mdimg/perfume-thumbs/s.92425.jpg"
+        },
+        {
+          "name": "Masa Lattafa Perfumes",
+          "url": "/perfume/Lattafa-Perfumes/Masa-88636.html",
+          "image": "https://fimgs.net/mdimg/perfume-thumbs/s.88636.jpg"
+        },
+        {
+          "name": "Brioche Vanille Lattafa Perfumes",
+          "url": "/perfume/Lattafa-Perfumes/Brioche-Vanille-98238.html",
+          "image": "https://fimgs.net/mdimg/perfume-thumbs/s.98238.jpg"
+        },
+        {
+          "name": "Pisa Lattafa Perfumes",
+          "url": "/perfume/Lattafa-Perfumes/Pisa-99140.html",
+          "image": "https://fimgs.net/mdimg/perfume-thumbs/s.99140.jpg"
+        },
+        {
+          "name": "Al Qiam Silver  Lattafa Perfumes",
+          "url": "/perfume/Lattafa-Perfumes/Al-Qiam-Silver-81763.html",
+          "image": "https://fimgs.net/mdimg/perfume-thumbs/s.81763.jpg"
+        },
+        {
+          "name": "Shaheen Gold Lattafa Perfumes",
+          "url": "/perfume/Lattafa-Perfumes/Shaheen-Gold-82814.html",
+          "image": "https://fimgs.net/mdimg/perfume-thumbs/s.82814.jpg"
+        },
+        {
+          "name": "Breeze Lattafa Perfumes",
+          "url": "/perfume/Lattafa-Perfumes/Breeze-99142.html",
+          "image": "https://fimgs.net/mdimg/perfume-thumbs/s.99142.jpg"
+        },
+        {
+          "name": "La African Drummer Lattafa Perfumes",
+          "url": "/perfume/Lattafa-Perfumes/La-African-Drummer-92182.html",
+          "image": "https://fimgs.net/mdimg/perfume-thumbs/s.92182.jpg"
+        },
+        {
+          "name": "Nebras Elixir Lattafa Perfumes",
+          "url": "/perfume/Lattafa-Perfumes/Nebras-Elixir-113906.html",
+          "image": "https://fimgs.net/mdimg/perfume-thumbs/s.113906.jpg"
+        },
+        {
+          "name": "Art Of Nature I Lattafa Perfumes",
+          "url": "/perfume/Lattafa-Perfumes/Art-Of-Nature-I-98241.html",
+          "image": "https://fimgs.net/mdimg/perfume-thumbs/s.98241.jpg"
+        },
+        {
+          "name": "Al Qiam Gold Lattafa Perfumes",
+          "url": "/perfume/Lattafa-Perfumes/Al-Qiam-Gold-82816.html",
+          "image": "https://fimgs.net/mdimg/perfume-thumbs/s.82816.jpg"
+        },
+        {
+          "name": "Ajwaa Lattafa Perfumes",
+          "url": "/perfume/Lattafa-Perfumes/Ajwaa-85368.html",
+          "image": "https://fimgs.net/mdimg/perfume-thumbs/s.85368.jpg"
+        },
+        {
+          "name": "Art Of Wood Lattafa Perfumes",
+          "url": "/perfume/Lattafa-Perfumes/Art-Of-Wood-98240.html",
+          "image": "https://fimgs.net/mdimg/perfume-thumbs/s.98240.jpg"
+        },
+        {
+          "name": "La Collection D'antiquités 1886 Lattafa Perfumes",
+          "url": "/perfume/Lattafa-Perfumes/La-Collection-D-antiquites-1886-92028.html",
+          "image": "https://fimgs.net/mdimg/perfume-thumbs/s.92028.jpg"
+        },
+        {
+          "name": "Kashan Lattafa Perfumes",
+          "url": "/perfume/Lattafa-Perfumes/Kashan-98244.html",
+          "image": "https://fimgs.net/mdimg/perfume-thumbs/s.98244.jpg"
+        },
+        {
+          "name": "Shaheen Silver Lattafa Perfumes",
+          "url": "/perfume/Lattafa-Perfumes/Shaheen-Silver-82815.html",
+          "image": "https://fimgs.net/mdimg/perfume-thumbs/s.82815.jpg"
+        },
+        {
+          "name": "La Collection D'antiquités 1910 Lattafa Perfumes",
+          "url": "/perfume/Lattafa-Perfumes/La-Collection-D-antiquites-1910-92036.html",
+          "image": "https://fimgs.net/mdimg/perfume-thumbs/s.92036.jpg"
+        },
+        {
+          "name": "Tharwah Silver Lattafa Perfumes",
+          "url": "/perfume/Lattafa-Perfumes/Tharwah-Silver-82005.html",
+          "image": "https://fimgs.net/mdimg/perfume-thumbs/s.82005.jpg"
+        },
+        {
+          "name": "Maharjan Gold Lattafa Perfumes",
+          "url": "/perfume/Lattafa-Perfumes/Maharjan-Gold-82798.html",
+          "image": "https://fimgs.net/mdimg/perfume-thumbs/s.82798.jpg"
+        },
+        {
+          "name": "Awaan Lattafa Perfumes",
+          "url": "/perfume/Lattafa-Perfumes/Awaan-84307.html",
+          "image": "https://fimgs.net/mdimg/perfume-thumbs/s.84307.jpg"
+        },
+        {
+          "name": "Al Areeq Gold Lattafa Perfumes",
+          "url": "/perfume/Lattafa-Perfumes/Al-Areeq-Gold-82810.html",
+          "image": "https://fimgs.net/mdimg/perfume-thumbs/s.82810.jpg"
+        },
+        {
+          "name": "Lahdath Lattafa Perfumes",
+          "url": "/perfume/Lattafa-Perfumes/Lahdath-82379.html",
+          "image": "https://fimgs.net/mdimg/perfume-thumbs/s.82379.jpg"
+        },
+        {
+          "name": "Raw Human Lattafa Perfumes",
+          "url": "/perfume/Lattafa-Perfumes/Raw-Human-99141.html",
+          "image": "https://fimgs.net/mdimg/perfume-thumbs/s.99141.jpg"
+        },
+        {
+          "name": "Hala Lattafa Perfumes",
+          "url": "/perfume/Lattafa-Perfumes/Hala-82813.html",
+          "image": "https://fimgs.net/mdimg/perfume-thumbs/s.82813.jpg"
+        },
+        {
+          "name": "Blue Sapphire Lattafa Perfumes",
+          "url": "/perfume/Lattafa-Perfumes/Blue-Sapphire-82808.html",
+          "image": "https://fimgs.net/mdimg/perfume-thumbs/s.82808.jpg"
+        },
+        {
+          "name": "Al Areeq Silver Lattafa Perfumes",
+          "url": "/perfume/Lattafa-Perfumes/Al-Areeq-Silver-82811.html",
+          "image": "https://fimgs.net/mdimg/perfume-thumbs/s.82811.jpg"
+        },
+        {
+          "name": "Winners Trophy Silver Lattafa Perfumes",
+          "url": "/perfume/Lattafa-Perfumes/Winners-Trophy-Silver-82622.html",
+          "image": "https://fimgs.net/mdimg/perfume-thumbs/s.82622.jpg"
+        },
+        {
+          "name": "Natural Oud Lattafa Perfumes",
+          "url": "/perfume/Lattafa-Perfumes/Natural-Oud-98243.html",
+          "image": "https://fimgs.net/mdimg/perfume-thumbs/s.98243.jpg"
+        },
+        {
+          "name": "Royal Sapphire Lattafa Perfumes",
+          "url": "/perfume/Lattafa-Perfumes/Royal-Sapphire-82809.html",
+          "image": "https://fimgs.net/mdimg/perfume-thumbs/s.82809.jpg"
+        },
+        {
+          "name": "Thouq Lattafa Perfumes",
+          "url": "/perfume/Lattafa-Perfumes/Thouq-82693.html",
+          "image": "https://fimgs.net/mdimg/perfume-thumbs/s.82693.jpg"
+        },
+        {
+          "name": "Art of Arabia II Lattafa Perfumes",
+          "url": "/perfume/Lattafa-Perfumes/Art-of-Arabia-II-92424.html",
+          "image": "https://fimgs.net/mdimg/perfume-thumbs/s.92424.jpg"
+        },
+        {
+          "name": "Maharjan Silver Lattafa Perfumes",
+          "url": "/perfume/Lattafa-Perfumes/Maharjan-Silver-82799.html",
+          "image": "https://fimgs.net/mdimg/perfume-thumbs/s.82799.jpg"
+        },
+        {
+          "name": "Al Ameed Lattafa Perfumes",
+          "url": "/perfume/Lattafa-Perfumes/Al-Ameed-82471.html",
+          "image": "https://fimgs.net/mdimg/perfume-thumbs/s.82471.jpg"
+        },
+        {
+          "name": "Afaq Lattafa Perfumes",
+          "url": "/perfume/Lattafa-Perfumes/Afaq-82812.html",
+          "image": "https://fimgs.net/mdimg/perfume-thumbs/s.82812.jpg"
+        },
+        {
+          "name": "Taraf Lattafa Perfumes",
+          "url": "/perfume/Lattafa-Perfumes/Taraf-108458.html",
+          "image": "https://fimgs.net/mdimg/perfume-thumbs/s.108458.jpg"
+        },
+        {
+          "name": "Winners Trophy Gold Lattafa Perfumes",
+          "url": "/perfume/Lattafa-Perfumes/Winners-Trophy-Gold-82621.html",
+          "image": "https://fimgs.net/mdimg/perfume-thumbs/s.82621.jpg"
+        },
+        {
+          "name": "Sur Mesure Noir Lattafa Perfumes",
+          "url": "/perfume/Lattafa-Perfumes/Sur-Mesure-Noir-113192.html",
+          "image": "https://fimgs.net/mdimg/perfume-thumbs/s.113192.jpg"
+        },
+        {
+          "name": "Kenzo Homme Eau de Toilette Intense Kenzo",
+          "url": "/perfume/Kenzo/Kenzo-Homme-Eau-de-Toilette-Intense-67899.html",
+          "image": "https://fimgs.net/mdimg/perfume/s.67899.jpg"
+        },
+        {
+          "name": "Kenzo Homme Eau de Parfum Kenzo",
+          "url": "/perfume/Kenzo/Kenzo-Homme-Eau-de-Parfum-73225.html",
+          "image": "https://fimgs.net/mdimg/perfume/s.73225.jpg"
+        },
+        {
+          "name": "Oud Minérale Tom Ford",
+          "url": "/perfume/Tom-Ford/Oud-Minerale-45192.html",
+          "image": "https://fimgs.net/mdimg/perfume/s.45192.jpg"
+        },
+        {
+          "name": "Kenzo Homme Santal Marin Kenzo",
+          "url": "/perfume/Kenzo/Kenzo-Homme-Santal-Marin-93195.html",
+          "image": "https://fimgs.net/mdimg/perfume/s.93195.jpg"
+        },
+        {
+          "name": "Megamare Orto Parisi",
+          "url": "/perfume/Orto-Parisi/Megamare-53471.html",
+          "image": "https://fimgs.net/mdimg/perfume/s.53471.jpg"
+        },
+        {
+          "name": "Kenzo Homme Marine Kenzo",
+          "url": "/perfume/Kenzo/Kenzo-Homme-Marine-80042.html",
+          "image": "https://fimgs.net/mdimg/perfume/s.80042.jpg"
+        },
+        {
+          "name": "Fusion d'Issey Extrême Issey Miyake",
+          "url": "/perfume/Issey-Miyake/Fusion-d-Issey-Extreme-67524.html",
+          "image": "https://fimgs.net/mdimg/perfume/s.67524.jpg"
+        },
+        {
+          "name": "Desert Star Armaf",
+          "url": "/perfume/Armaf/Desert-Star-92890.html",
+          "image": "https://fimgs.net/mdimg/perfume/s.92890.jpg"
+        },
+        {
+          "name": "Endless Sea Superz.",
+          "url": "/perfume/Superz/Endless-Sea-79420.html",
+          "image": "https://fimgs.net/mdimg/perfume/s.79420.jpg"
+        },
+        {
+          "name": "Ganymede Marc-Antoine Barrois",
+          "url": "/perfume/Marc-Antoine-Barrois/Ganymede-54720.html",
+          "image": "https://fimgs.net/mdimg/perfume/s.54720.jpg"
+        },
+        {
+          "name": "Le Beau Paradise Garden Jean Paul Gaultier",
+          "url": "/perfume/Jean-Paul-Gaultier/Le-Beau-Paradise-Garden-88836.html",
+          "image": "https://fimgs.net/mdimg/perfume/s.88836.jpg"
+        },
+        {
+          "name": "Niche Emarati Hayaam Lattafa Perfumes",
+          "url": "/perfume/Lattafa-Perfumes/Niche-Emarati-Hayaam-100140.html",
+          "image": "https://fimgs.net/mdimg/perfume/s.100140.jpg"
+        },
+        {
+          "name": "Platinum Sky Zara",
+          "url": "/perfume/Zara/Platinum-Sky-101850.html",
+          "image": "https://fimgs.net/mdimg/perfume/s.101850.jpg"
+        },
+        {
+          "name": "Najdia Intense Lattafa Perfumes",
+          "url": "/perfume/Lattafa-Perfumes/Najdia-Intense-100128.html",
+          "image": "https://fimgs.net/mdimg/perfume/s.100128.jpg"
+        },
+        {
+          "name": "Cinque Terre Mancera",
+          "url": "/perfume/Mancera/Cinque-Terre-97826.html",
+          "image": "https://fimgs.net/mdimg/perfume/s.97826.jpg"
+        },
+        {
+          "name": "Sports Car Club Penhaligon's",
+          "url": "/perfume/Penhaligon-s/Sports-Car-Club-73924.html",
+          "image": "https://fimgs.net/mdimg/perfume/s.73924.jpg"
+        },
+        {
+          "name": "Squid Zoologist Perfumes",
+          "url": "/perfume/Zoologist-Perfumes/Squid-56294.html",
+          "image": "https://fimgs.net/mdimg/perfume/s.56294.jpg"
+        },
+        {
+          "name": "Cadenza Sospiro Perfumes",
+          "url": "/perfume/Sospiro-Perfumes/Cadenza-75929.html",
+          "image": "https://fimgs.net/mdimg/perfume/s.75929.jpg"
+        },
+        {
+          "name": "Viride Orto Parisi",
+          "url": "/perfume/Orto-Parisi/Viride-24193.html",
+          "image": "https://fimgs.net/mdimg/perfume/s.24193.jpg"
+        },
+        {
+          "name": "Lail Maleki Moroccan Blue Lattafa Perfumes",
+          "url": "/perfume/Lattafa-Perfumes/Lail-Maleki-Moroccan-Blue-107705.html",
+          "image": "https://fimgs.net/mdimg/perfume/s.107705.jpg"
+        },
+        {
+          "name": "Khamrah Lattafa Perfumes",
+          "url": "/perfume/Lattafa-Perfumes/Khamrah-75805.html",
+          "image": "https://fimgs.net/mdimg/perfume-thumbs/s.75805.jpg"
+        },
+        {
+          "name": "Asad Lattafa Perfumes",
+          "url": "/perfume/Lattafa-Perfumes/Asad-72821.html",
+          "image": "https://fimgs.net/mdimg/perfume-thumbs/s.72821.jpg"
+        },
+        {
+          "name": "Club de Nuit Intense Man Armaf",
+          "url": "/perfume/Armaf/Club-de-Nuit-Intense-Man-34696.html",
+          "image": "https://fimgs.net/mdimg/perfume-thumbs/s.34696.jpg"
+        },
+        {
+          "name": "Bade'e Al Oud Oud for Glory Lattafa Perfumes",
+          "url": "/perfume/Lattafa-Perfumes/Bade-e-Al-Oud-Oud-for-Glory-64948.html",
+          "image": "https://fimgs.net/mdimg/perfume-thumbs/s.64948.jpg"
+        },
+        {
+          "name": "Turathi Blue Afnan",
+          "url": "/perfume/Afnan/Turathi-Blue-70839.html",
+          "image": "https://fimgs.net/mdimg/perfume-thumbs/s.70839.jpg"
+        },
+        {
+          "name": "Versace Pour Homme Dylan Blue Versace",
+          "url": "/perfume/Versace/Versace-Pour-Homme-Dylan-Blue-40031.html",
+          "image": "https://fimgs.net/mdimg/perfume-thumbs/s.40031.jpg"
+        },
+        {
+          "name": "Encre Noire Lalique",
+          "url": "/perfume/Lalique/Encre-Noire-1834.html",
+          "image": "https://fimgs.net/mdimg/perfume-thumbs/s.1834.jpg"
+        },
+        {
+          "name": "Dior Homme Intense 2011 Dior",
+          "url": "/perfume/Dior/Dior-Homme-Intense-2011-13016.html",
+          "image": "https://fimgs.net/mdimg/perfume-thumbs/s.13016.jpg"
+        },
+        {
+          "name": "Fahrenheit Dior",
+          "url": "/perfume/Dior/Fahrenheit-228.html",
+          "image": "https://fimgs.net/mdimg/perfume-thumbs/s.228.jpg"
+        },
+        {
+          "name": "Encre Noire Sport Lalique",
+          "url": "/perfume/Lalique/Encre-Noire-Sport-21369.html",
+          "image": "https://fimgs.net/mdimg/perfume-thumbs/s.21369.jpg"
+        },
+        {
+          "name": "Ameer Al Oudh Intense Oud Lattafa Perfumes",
+          "url": "/perfume/Lattafa-Perfumes/Ameer-Al-Oudh-Intense-Oud-64947.html",
+          "image": "https://fimgs.net/mdimg/perfume-thumbs/s.64947.jpg"
+        },
+        {
+          "name": "Encre Noire A L'Extreme Lalique",
+          "url": "/perfume/Lalique/Encre-Noire-A-L-Extreme-32356.html",
+          "image": "https://fimgs.net/mdimg/perfume-thumbs/s.32356.jpg"
+        },
+        {
+          "name": "Bentley for Men Intense Bentley",
+          "url": "/perfume/Bentley/Bentley-for-Men-Intense-17666.html",
+          "image": "https://fimgs.net/mdimg/perfume-thumbs/s.17666.jpg"
+        },
+        {
+          "name": "Versace Pour Homme Versace",
+          "url": "/perfume/Versace/Versace-Pour-Homme-2318.html",
+          "image": "https://fimgs.net/mdimg/perfume-thumbs/s.2318.jpg"
+        },
+        {
+          "name": "Terre d'Hermès Hermès",
+          "url": "/perfume/Hermes/Terre-d-Hermes-17.html",
+          "image": "https://fimgs.net/mdimg/perfume-thumbs/s.17.jpg"
+        },
+        {
+          "name": "Shuhrah Pour Homme Rasasi",
+          "url": "/perfume/Rasasi/Shuhrah-Pour-Homme-53578.html",
+          "image": "https://fimgs.net/mdimg/perfume-thumbs/s.53578.jpg"
+        },
+        {
+          "name": "Atlas Lattafa Perfumes",
+          "url": "/perfume/Lattafa-Perfumes/Atlas-89765.html",
+          "image": "https://fimgs.net/mdimg/perfume-thumbs/s.89765.jpg"
+        },
+        {
+          "name": "9pm Afnan",
+          "url": "/perfume/Afnan/9pm-65414.html",
+          "image": "https://fimgs.net/mdimg/perfume-thumbs/s.65414.jpg"
+        },
+        {
+          "name": "Qaed Al Fursan Lattafa Perfumes",
+          "url": "/perfume/Lattafa-Perfumes/Qaed-Al-Fursan-67996.html",
+          "image": "https://fimgs.net/mdimg/perfume-thumbs/s.67996.jpg"
+        },
+        {
+          "name": "Supremacy Not Only Intense Afnan",
+          "url": "/perfume/Afnan/Supremacy-Not-Only-Intense-68271.html",
+          "image": "https://fimgs.net/mdimg/perfume-thumbs/s.68271.jpg"
+        }
+      ],
+      "people_also_like": []
+    },
+    "brand_info": {
+      "brand_name": "Lattafa Perfumes",
+      "brand_logo": "https://fimgs.net/mdimg/dizajneri/m.1979.jpg",
+      "brand_url": "https://www.fragrantica.com/designers/Lattafa-Perfumes.html"
+    },
+    "collections": [],
+    "availability": {
+      "buy_links": [],
+      "price_comparison": []
+    },
+    "metadata": {
+      "canonical_url": "https://www.fragrantica.com/perfume/Lattafa-Perfumes/Wajood-80467.html",
+      "alternate_languages": {
+        "en": "https://www.fragrantica.com/perfume/Lattafa-Perfumes/Wajood-80467.html",
+        "de": "https://www.fragrantica.de/Parfum/Lattafa-Perfumes/Wajood-80467.html",
+        "es": "https://www.fragrantica.es/perfume/Lattafa-Perfumes/Wajood-80467.html",
+        "fr": "https://www.fragrantica.fr/parfum/Lattafa-Perfumes/Wajood-80467.html",
+        "cs": "https://www.fragrantica.cz/perfume/Lattafa-Perfumes/Wajood-80467.html",
+        "it": "https://www.fragrantica.it/perfume/Lattafa-Perfumes/Wajood-80467.html",
+        "ru": "https://www.fragrantica.ru/perfume/Lattafa-Perfumes/Wajood-80467.html",
+        "pl": "https://www.fragrantica.pl/perfumy/Lattafa-Perfumes/Wajood-80467.html",
+        "pt": "https://www.fragrantica.com.br/perfume/Lattafa-Perfumes/Wajood-80467.html",
+        "el": "https://www.fragrantica.gr/perfume/Lattafa-Perfumes/Wajood-80467.html",
+        "zh": "https://www.fragrantica.asia/perfume/Lattafa-Perfumes/Wajood-80467.html",
+        "nl": "https://www.fragrantica.nl/parfum/Lattafa-Perfumes/Wajood-80467.html",
+        "sr": "https://www.punmiris.com/parfem/Lattafa-Perfumes/Wajood-80467.html",
+        "ro": "https://www.fragrantica.ro/parfum/Lattafa-Perfumes/Wajood-80467.html",
+        "ar": "https://www.fragranticarabia.com/perfumes/Lattafa-Perfumes/Wajood-80467.html",
+        "uk": "https://www.fragrantica.ua/perfumes/Lattafa-Perfumes/Wajood-80467.html",
+        "mn": "https://www.fragrantica.mn/perfumes/Lattafa-Perfumes/Wajood-80467.html",
+        "he": "https://www.fragrantica.co.il/perfumes/Lattafa-Perfumes/Wajood-80467.html"
+      },
+      "schema_type": "Product",
+      "extraction_date": "2025-10-02T21:17:39.864659"
+    }
+  }
+]

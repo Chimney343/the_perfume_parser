@@ -1,0 +1,10 @@
+Alt-Svc: h3=":443"; ma=86400
+Cf-Cache-Status: DYNAMIC
+Cf-Ray: 988658cf2ef01280-WAW
+Content-Type: text/html; charset=UTF-8
+Date: Thu, 02 Oct 2025 18:43:42 GMT
+Server: cloudflare
+Set-Cookie: frecently=a%3A1%3A%7Bi%3A80467%3Bi%3A1759430622%3B%7D; expires=Thu, 09 Oct 2025 18:43:42 GMT; Max-Age=604800; path=/; domain=www.fragrantica.com
+rtyt45gh=1; expires=Thu, 25 Sep 2025 18:43:42 GMT; Max-Age=0; path=/; domain=www.fragrantica.com
+Vary: Accept-Encoding
+X-Powered-By: PHP/8.4.11
