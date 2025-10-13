@@ -2,6 +2,8 @@ from scrapy import signals
 from scrapy.http import HtmlResponse
 import random
 import time
+from random_user_agent.user_agent import UserAgent
+from random_user_agent.params import SoftwareName, OperatingSystem
 
 
 class PerfumeScraperSpiderMiddleware:
@@ -35,11 +37,10 @@ class PerfumeScraperDownloaderMiddleware:
     '''Downloader middleware for perfume scraper'''
 
     def __init__(self):
-        self.user_agents = [
-            'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36',
-            'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:89.0) Gecko/20100101 Firefox/89.0',
-            'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36',
-        ]
+        # Initialize random user agent generator
+        software_names = [SoftwareName.CHROME.value, SoftwareName.FIREFOX.value, SoftwareName.SAFARI.value]
+        operating_systems = [OperatingSystem.WINDOWS.value, OperatingSystem.MAC.value, OperatingSystem.LINUX.value]
+        self.user_agent_rotator = UserAgent(software_names=software_names, operating_systems=operating_systems)
 
     @classmethod
     def from_crawler(cls, crawler):
@@ -48,8 +49,12 @@ class PerfumeScraperDownloaderMiddleware:
         return s
 
     def process_request(self, request, spider):
-        # Rotate user agents
-        request.headers['User-Agent'] = random.choice(self.user_agents)
+        # Rotate user agents using random-user-agent library
+        user_agent = self.user_agent_rotator.get_random_user_agent()
+        request.headers['User-Agent'] = user_agent
+
+        # Log the selected user agent at debug level
+        spider.logger.debug(f'Using User-Agent: {user_agent}')
 
         # Add random delay
         time.sleep(random.uniform(0.5, 2.0))
