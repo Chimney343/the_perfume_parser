@@ -45,7 +45,7 @@ venv.bak/
 
 # Scrapy / Playwright downloads
 downloaded/
-.scrapy/*
+.scrapy/
 
 # OS files
 .DS_Store
