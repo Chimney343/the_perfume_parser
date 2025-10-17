@@ -7,9 +7,11 @@ services:
     volumes:
       - ./parfumo_dumps:/app/parfumo_dumps
       - .:/app:ro
+      # writable cache for Scrapy project data (HTTPCACHE, etc.)
+      - ./scrapy_cache:/app/.scrapy
     environment:
       - INSTALL_PLAYWRIGHT_BROWSERS=0
-    command: ["scrapy", "crawl", "parfumo_spider", "-a", "max_brand_pages=1"]
+    command: ["scrapy", "crawl", "parfumo_spider", "-a", "max_brand_pages=1", "-a", "dump_html=False"]
     tty: false
     restart: unless-stopped
     deploy:

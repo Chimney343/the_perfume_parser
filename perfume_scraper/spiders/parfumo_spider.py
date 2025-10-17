@@ -58,11 +58,16 @@ class ParfumoSpider(scrapy.Spider):
             self.logger.warning(f"Invalid max_brand_pages value '{max_brand_pages_param}', using default: {self.DEFAULT_MAX_BRAND_PAGES}")
             self.max_brand_pages = self.DEFAULT_MAX_BRAND_PAGES  # Default: visit 1 brand page
         
+        # Parameter to control HTML dumping (default: True)
+        dump_html_param = kwargs.get('dump_html', 'True')
+        self.dump_html = str(dump_html_param).lower() in ('true', '1', 'yes')
+        
         # Ensure output directory exists
         os.makedirs(self.output_dir, exist_ok=True)
         self.logger.info(f"Output directory: {self.output_dir}")
         self.logger.info(f"Will scrape {len(self.start_urls)} letter pages")
         self.logger.info(f"Max brand pages to visit: {self.max_brand_pages if self.max_brand_pages > 0 else 'unlimited'}")
+        self.logger.info(f"HTML dumping: {'enabled' if self.dump_html else 'disabled'}")
     
     def start_requests(self) -> Generator[scrapy.Request, None, None]:
         """Generate initial requests with proper meta information and realistic timing."""
@@ -218,8 +223,8 @@ class ParfumoSpider(scrapy.Spider):
         
         self.logger.info(f"Processing page {current_page} for brand: {brand_name}")
         
-        # Save the HTML for first page only (for debugging)
-        if current_page == 1:
+        # Save the HTML for first page only (for debugging, if enabled)
+        if current_page == 1 and self.dump_html:
             # Create a 'brand_pages' folder inside the output directory
             brand_pages_dir = os.path.join(self.output_dir, "brand_pages")
             os.makedirs(brand_pages_dir, exist_ok=True)
