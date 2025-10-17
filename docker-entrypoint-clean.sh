@@ -12,7 +12,7 @@ fi
 
 if [ $# -eq 0 ]; then
   if command -v scrapy >/dev/null 2>&1; then
-    exec scrapy crawl parfumo_spider -a max_brand_pages=1
+    exec scrapy crawl parfumo_spider -a max_brand_pages=0
   else
     echo "scrapy not found in PATH" >&2
     exit 1
