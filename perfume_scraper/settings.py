@@ -63,8 +63,8 @@ TELNETCONSOLE_ENABLED = False
 LOG_LEVEL = 'INFO'
 LOG_ENABLED = True
 
-# Depth limit (not needed for this spider but good practice)
-DEPTH_LIMIT = 2
+# Depth limit (0 = unlimited, needed for brand page pagination with many pages)
+DEPTH_LIMIT = 0
 
 # Default request headers (will be merged with custom headers)
 DEFAULT_REQUEST_HEADERS = {
@@ -106,7 +106,7 @@ FEEDS = {
         'indent': 2,
         'store_empty': False,
         'overwrite': False,
-        'fields': ['brand_name', 'brand_url', 'perfume_urls', 'total_perfumes', 'pages_scraped', 'scraped_at', 'scraped_by', 'country', 'established'],
+        'fields': ['brand_name', 'brand_url', 'perfume_urls', 'total_perfumes', 'pages_scraped', 'scraped_at', 'scraped_by', 'country', 'established', 'description'],
         'item_classes': ['perfume_scraper.items.BrandPageItem'],
     },
 }

@@ -1,0 +1,19 @@
+version: '3.8'
+services:
+  parfumo:
+    build: .
+    image: parfumo_scraper:latest
+    container_name: parfumo_scraper
+    volumes:
+      - ./parfumo_dumps:/app/parfumo_dumps
+      - .:/app:ro
+    environment:
+      - INSTALL_PLAYWRIGHT_BROWSERS=0
+    command: ["scrapy", "crawl", "parfumo_spider", "-a", "max_brand_pages=1"]
+    tty: false
+    restart: unless-stopped
+    deploy:
+      resources:
+        limits:
+          cpus: '1.0'
+          memory: 1024M

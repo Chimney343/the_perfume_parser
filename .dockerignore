@@ -1,0 +1,15 @@
+.venv
+venv
+__pycache__
+*.pyc
+*.pyo
+.pytest_cache
+.cache
+parfumo_dumps
+downloaded
+.git
+/.gitignore
+*.db
+dist
+build
+/.venv

@@ -1,160 +1,70 @@
 """
-Parfumo spider for scraping ALL brand data from parfumo.com.
-This spider walks through all letter pages (0, A-Z) to collect all brands.
-Refactored to only handle brand discovery - use parfumo_perfume_spider for perfume details.
+Brand Page Spider for scraping a single brand's perfume listing page.
+Similar to parfumo_spider's parse_brand_page method but as a standalone spider.
+Handles pagination through all pages of a single brand.
+
+Usage:
+    poetry run scrapy crawl brand_page_spider -a url="https://www.parfumo.com/Perfumes/Dior"
 """
 
 import scrapy
 import os
-import json
-from datetime import datetime
 import re
+from datetime import datetime
 from urllib.parse import urljoin
-import string
-from typing import Dict, List, Set, Any, Optional, Generator, Union
-from scrapy.exceptions import NotConfigured
+from typing import Dict, List, Set, Any, Optional, Generator
 
 # Import Items and Loaders
-from perfume_scraper.items import BrandItem, BrandPageItem
-from perfume_scraper.loaders import BrandItemLoader, BrandPageItemLoader
+from perfume_scraper.items import BrandPageItem
+from perfume_scraper.loaders import BrandPageItemLoader
 
 
-class ParfumoSpider(scrapy.Spider):
-    name = 'parfumo_spider'
+class BrandPageSpider(scrapy.Spider):
+    name = 'brand_page_spider'
     allowed_domains = ['parfumo.com']
     
-    # Constants for URL filtering and configuration
+    # Constants for URL filtering
     MIN_PERFUME_URL_DEPTH = 4  # Minimum slashes to identify perfume detail pages
-    DEFAULT_MAX_BRAND_PAGES = 0  # Default limit for brand pages to visit (0 = unlimited)
-    
-    # Start with all letter pages (0 for numbers, a-z for letters)
-    start_urls = [
-        'https://www.parfumo.com/Brands/0',  # Numbers
-    ] + [f'https://www.parfumo.com/Brands/{letter}' for letter in string.ascii_lowercase]
     
     def __init__(self, *args, **kwargs) -> None:
-        super(ParfumoSpider, self).__init__(*args, **kwargs)
+        super(BrandPageSpider, self).__init__(*args, **kwargs)
         self.timestamp: str = datetime.now().strftime("%Y%m%d_%H%M%S")
         self.output_dir: str = "parfumo_dumps"
-        
-        # Use set for duplicate tracking instead of dictionary
-        self.seen_brands: Set[str] = set()
-        
-        # Counter for brand pages visited
-        self.brand_pages_visited: int = 0
         
         # Dictionary to store brand page data during pagination
         # Key: brand_url, Value: dict with perfume_urls set and metadata
         self.brand_page_data: Dict[str, Dict[str, Any]] = {}
         
-        # Parameter to limit brand pages to visit (0 = unlimited)
-        max_brand_pages_param = kwargs.get('max_brand_pages', self.DEFAULT_MAX_BRAND_PAGES)
-        try:
-            self.max_brand_pages = int(max_brand_pages_param)
-            if self.max_brand_pages < 0:
-                self.logger.warning(f"max_brand_pages cannot be negative, using default: {self.DEFAULT_MAX_BRAND_PAGES}")
-                self.max_brand_pages = self.DEFAULT_MAX_BRAND_PAGES
-        except (ValueError, TypeError):
-            self.logger.warning(f"Invalid max_brand_pages value '{max_brand_pages_param}', using default: {self.DEFAULT_MAX_BRAND_PAGES}")
-            self.max_brand_pages = self.DEFAULT_MAX_BRAND_PAGES  # Default: visit 1 brand page
+        # Get brand URL from parameter
+        self.brand_url = kwargs.get('url')
+        
+        if not self.brand_url:
+            raise ValueError("Missing required parameter: url (brand page URL)")
         
         # Ensure output directory exists
         os.makedirs(self.output_dir, exist_ok=True)
         self.logger.info(f"Output directory: {self.output_dir}")
-        self.logger.info(f"Will scrape {len(self.start_urls)} letter pages")
-        self.logger.info(f"Max brand pages to visit: {self.max_brand_pages if self.max_brand_pages > 0 else 'unlimited'}")
+        self.logger.info(f"Brand URL: {self.brand_url}")
     
     def start_requests(self) -> Generator[scrapy.Request, None, None]:
-        """Generate initial requests with proper meta information and realistic timing."""
-        for url in self.start_urls:
-            yield scrapy.Request(
-                url=url,
-                callback=self.parse,
-                meta={
-                    'dont_cache': False,  # Use cache if available
-                    'download_timeout': 60,
-                    'max_retry_times': 5,
-                },
-                errback=self.handle_error,
-                dont_filter=False,  # Enable duplicate filtering
-            )
-    
-    def parse(self, response: scrapy.http.Response) -> Generator[Any, None, None]:
-        """
-        Parse each letter page and extract all brand information.
+        """Generate initial request for the brand page."""
+        # Extract brand name from URL for logging
+        # URL format: https://www.parfumo.com/Perfumes/BrandName
+        brand_name = self.brand_url.split('/')[-1]
         
-        Args:
-            response: Scrapy response object for a letter page
-            
-        Yields:
-            BrandItem: Structured brand data
-        """
-        # Get the current letter from URL
-        current_letter = response.url.split('/')[-1].upper()
-        
-        self.logger.info(f"Processing letter page: {current_letter}")
-        self.logger.debug(f"Response status: {response.status}")
-        
-        # Extract all brand links from the brands list
-        brand_selectors = response.css('div.brands_list a[href*="/Perfumes/"]')
-        
-        self.logger.info(f"Found {len(brand_selectors)} brands on letter '{current_letter}' page")
-        
-        # Extract brand information using ItemLoader
-        for selector in brand_selectors:
-            # Create ItemLoader for this brand
-            loader = BrandItemLoader(item=BrandItem(), selector=selector)
-            
-            # Extract core fields
-            loader.add_css('name', '::text')
-            loader.add_css('url', '::attr(href)')
-            
-            # Add derived field - slug from URL
-            brand_url = selector.css('::attr(href)').get()
-            if brand_url:
-                full_url = urljoin(response.url, brand_url)
-                loader.add_value('url', full_url)
-                loader.add_value('slug', brand_url)
-            
-            # Add metadata
-            loader.add_value('letter_category', current_letter)
-            loader.add_value('source_url', response.url)
-            loader.add_value('scraped_at', datetime.utcnow().isoformat())
-            loader.add_value('scraped_by', self.name)
-            
-            # Load the item
-            item = loader.load_item()
-            
-            # Check for duplicates
-            brand_name = item.get('name')
-            if brand_name and brand_name not in self.seen_brands:
-                self.seen_brands.add(brand_name)
-                yield item
-                
-                # Follow brand URL if we haven't reached the limit
-                if self.max_brand_pages == 0 or self.brand_pages_visited < self.max_brand_pages:
-                    brand_url = item.get('url')
-                    if brand_url:
-                        self.logger.info(f"Following brand page: {brand_name} -> {brand_url}")
-                        yield scrapy.Request(
-                            url=brand_url,
-                            callback=self.parse_brand_page,
-                            meta={
-                                'brand_name': brand_name,
-                                'brand_slug': item.get('slug'),
-                                'country': None,  # Will be extracted on first page
-                                'established': None,  # Will be extracted on first page
-                                'dont_cache': False,
-                            },
-                            errback=self.handle_error,
-                        )
-            else:
-                self.logger.debug(f"Duplicate brand found: {brand_name}")
-        
-        # Update stats
-        self.crawler.stats.set_value('brands_collected', len(self.seen_brands))
-        self.logger.info(f"Total unique brands collected so far: {len(self.seen_brands)}")
-
+        yield scrapy.Request(
+            url=self.brand_url,
+            callback=self.parse_brand_page,
+            meta={
+                'brand_name': brand_name,
+                'brand_slug': brand_name,
+                'country': None,  # Will be extracted on first page
+                'established': None,  # Will be extracted on first page
+                'description': None,  # Will be extracted on first page
+                'dont_cache': False,
+            },
+            errback=self.handle_error,
+        )
     
     def parse_brand_page(self, response: scrapy.http.Response) -> Generator[Any, None, None]:
         """
@@ -195,7 +105,6 @@ class ParfumoSpider(scrapy.Spider):
         # Normalize brand URL base (remove query params and trailing slash)
         brand_url_base = response.url.split('?')[0].rstrip('/')  # Remove query params
         if brand_url_base not in self.brand_page_data:
-            self.brand_pages_visited += 1
             self.brand_page_data[brand_url_base] = {
                 'brand_name': brand_name,
                 'brand_url': brand_url_base,
@@ -203,7 +112,7 @@ class ParfumoSpider(scrapy.Spider):
                 'pages_scraped': 0,
             }
             self.logger.info("=" * 80)
-            self.logger.info(f"BRAND PAGE #{self.brand_pages_visited}: {brand_name}")
+            self.logger.info(f"BRAND PAGE: {brand_name}")
             self.logger.info(f"URL: {brand_url_base}")
             self.logger.info("=" * 80)
         
@@ -280,14 +189,8 @@ class ParfumoSpider(scrapy.Spider):
             # Create and yield BrandPageItem
             yield self._create_brand_page_item(brand_data)
             
-            # Perfume URLs collected - no longer following them in brand spider
-            # Use parfumo_perfume_spider for detailed perfume scraping
-            
             # Clean up brand data from memory
             del self.brand_page_data[brand_url_base]
-        
-        # Update stats
-        self.crawler.stats.set_value('brand_pages_visited', self.brand_pages_visited)
     
     def handle_error(self, failure: Any) -> None:
         """Handle request failures with detailed logging."""
@@ -296,7 +199,7 @@ class ParfumoSpider(scrapy.Spider):
         self.logger.error(error_msg)
         
         # Save error information
-        error_filename = os.path.join(self.output_dir, f"brand_error_log_{self.timestamp}.txt")
+        error_filename = os.path.join(self.output_dir, f"brand_page_error_log_{self.timestamp}.txt")
         
         try:
             with open(error_filename, 'a', encoding='utf-8') as f:
@@ -312,26 +215,19 @@ class ParfumoSpider(scrapy.Spider):
         Called when spider closes - log statistics.
         Feed Exports automatically handle JSON/CSV output.
         """
-        self.logger.info(f"Brand spider closed: {reason}")
-        self.logger.info(f"Total unique brands collected: {len(self.seen_brands)}")
+        self.logger.info(f"Brand page spider closed: {reason}")
         
         # Log statistics
         stats = self.crawler.stats.get_stats()
         self.logger.info("=" * 60)
-        self.logger.info("BRAND SCRAPING STATISTICS")
+        self.logger.info("BRAND PAGE SCRAPING STATISTICS")
         self.logger.info("=" * 60)
         self.logger.info(f"Items scraped: {stats.get('item_scraped_count', 0)}")
         self.logger.info(f"Pages crawled: {stats.get('response_received_count', 0)}")
-        self.logger.info(f"Unique brands: {len(self.seen_brands)}")
-        self.logger.info(f"Brand pages visited: {self.brand_pages_visited}")
-        self.logger.info(f"Duplicates found: {stats.get('item_scraped_count', 0) - len(self.seen_brands)}")
         self.logger.info("=" * 60)
-        self.logger.info("✅ Output files created by Feed Exports:")
-        self.logger.info("   - JSON: parfumo_dumps/brands_<timestamp>.json")
-        self.logger.info("   - CSV:  parfumo_dumps/brands_<timestamp>.csv")
-        self.logger.info("   - Brand pages: parfumo_dumps/brand_pages_<timestamp>.json")
-        self.logger.info("=" * 60)
-        self.logger.info("ℹ️  For perfume details, use: scrapy crawl parfumo_perfume_spider")
+        self.logger.info("✅ Output file created by Feed Exports:")
+        self.logger.info("   - JSON: parfumo_dumps/brand_pages_<timestamp>.json")
+        self.logger.info("   - CSV:  parfumo_dumps/brand_pages_<timestamp>.csv")
         self.logger.info("=" * 60)
     
     def _extract_perfume_urls(self, response: scrapy.http.Response) -> List[str]:
@@ -393,7 +289,8 @@ class ParfumoSpider(scrapy.Spider):
 
         # Ensure established field is not None
         loader.add_value('established', brand_data.get('established') or 'Unknown')
-        # Add brand description (may be 'Unknown' if not present)
+
+        # Add brand description
         loader.add_value('description', brand_data.get('description') or 'Unknown')
 
         # Calculate total_perfumes within the loader (avoid unnecessary list cast)

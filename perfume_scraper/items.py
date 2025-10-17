@@ -78,6 +78,9 @@ class BrandPageItem(scrapy.Item):
     
     # Established year
     established = scrapy.Field()  # Year the brand was established
+    
+    # Brand description
+    description = scrapy.Field()  # Full brand description text
 
 
 class PerfumeItem(scrapy.Item):
