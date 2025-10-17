@@ -33,5 +33,9 @@ RUN mkdir -p /app/parfumo_dumps
 COPY docker-entrypoint.sh /app/docker-entrypoint.sh
 RUN chmod +x /app/docker-entrypoint.sh
 
-ENTRYPOINT ["/app/docker-entrypoint.sh"]
+# Also install entrypoint in a stable location that won't be masked by a host mount
+COPY docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh
+RUN chmod +x /usr/local/bin/docker-entrypoint.sh
+
+ENTRYPOINT ["/usr/local/bin/docker-entrypoint.sh"]
 CMD ["scrapy", "crawl", "parfumo_spider", "-a", "max_brand_pages=1"]
