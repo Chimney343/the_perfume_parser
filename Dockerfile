@@ -30,11 +30,11 @@ COPY . /app
 RUN mkdir -p /app/parfumo_dumps
 
 # Add entrypoint
-COPY docker-entrypoint.sh /app/docker-entrypoint.sh
+COPY docker-entrypoint-clean.sh /app/docker-entrypoint.sh
 RUN chmod +x /app/docker-entrypoint.sh
 
 # Also install entrypoint in a stable location that won't be masked by a host mount
-COPY docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh
+COPY docker-entrypoint-clean.sh /usr/local/bin/docker-entrypoint.sh
 RUN chmod +x /usr/local/bin/docker-entrypoint.sh
 
 ENTRYPOINT ["/usr/local/bin/docker-entrypoint.sh"]
