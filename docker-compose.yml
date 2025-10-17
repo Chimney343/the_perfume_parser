@@ -5,7 +5,6 @@ services:
     container_name: parfumo_scraper
     volumes:
       - ./parfumo_dumps:/app/parfumo_dumps
-      - .:/app:ro
       - scrapy_cache_vol:/app/.scrapy
     environment:
       - INSTALL_PLAYWRIGHT_BROWSERS=0
