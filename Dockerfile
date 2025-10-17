@@ -20,7 +20,7 @@ RUN poetry install --no-interaction --no-ansi --no-root --only main || poetry in
 
 COPY . /app
 
-RUN mkdir -p /app/parfumo_dumps
+RUN mkdir -p /app/parfumo_dumps /app/.scrapy
 
 COPY docker-entrypoint-clean.sh /app/docker-entrypoint.sh
 RUN chmod +x /app/docker-entrypoint.sh
